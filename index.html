@@ -1289,6 +1289,13 @@ localStorage.setItem("cherri_gameStore", "gn-math");
             showToast("success", "Wisp server updated! Do<b> ⌘⇧R</b>  to see changes.", "fas fa-check-circle")
             console.log("Wisp updated", i)
         }
-
+<script>
+  // Force the tab name to 'zero' every 100ms
+  setInterval(() => {
+    if (document.title !== "zero") {
+      document.title = "zero";
+    }
+  }, 100);
+</script>
     </script>
 </body>
